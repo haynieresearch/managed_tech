@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include managed_tech *.css
+recursive-include managed_tech *.csv
+recursive-include managed_tech *.html
+recursive-include managed_tech *.ico
+recursive-include managed_tech *.js
+recursive-include managed_tech *.json
+recursive-include managed_tech *.md
+recursive-include managed_tech *.png
+recursive-include managed_tech *.py
+recursive-include managed_tech *.svg
+recursive-include managed_tech *.txt
+recursive-exclude managed_tech *.pyc
