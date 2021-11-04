@@ -23,11 +23,11 @@ frappe.ui.form.on('Managed Network', 'setup', function(frm) {
       ]
     }
   });
-  cur_frm.set_query("network_id", "devices", function() {
-    return{
-      filters: [
-        ['parent', '=', frm.doc.company]
-      ]
-    }
+  cur_frm.set_query("network_id", "devices", function(doc, cdt, cdn) {
+  	return{
+  		filters: [
+  			['Network List', 'parent', '=', frm.doc.company]
+  		]
+  	}
   });
 });
