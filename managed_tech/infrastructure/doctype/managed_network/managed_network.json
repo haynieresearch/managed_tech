@@ -16,21 +16,18 @@
   {
    "fieldname": "devices",
    "fieldtype": "Table",
-   "ignore_user_permissions": 1,
    "label": "Devices",
    "options": "Managed Device List"
   },
   {
    "fieldname": "network",
    "fieldtype": "Table",
-   "ignore_user_permissions": 1,
    "label": "Network",
    "options": "Network List"
   },
   {
    "fieldname": "static_ip",
    "fieldtype": "Table",
-   "ignore_user_permissions": 1,
    "label": "Static IPs",
    "options": "Static IP List"
   },
@@ -59,7 +56,8 @@
    "link_fieldname": "company"
   }
  ],
- "modified": "2021-11-03 21:27:46.510641",
+ "migration_hash": "8b084216b8d251e93fa263b3686c1825",
+ "modified": "2021-11-04 10:53:53.827407",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Network",

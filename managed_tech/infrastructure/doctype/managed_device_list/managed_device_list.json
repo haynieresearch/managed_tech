@@ -154,6 +154,7 @@
   {
    "fieldname": "network_id",
    "fieldtype": "Link",
+   "ignore_user_permissions": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Network ID",
@@ -172,7 +173,8 @@
  ],
  "istable": 1,
  "links": [],
- "modified": "2021-11-03 19:17:27.045834",
+ "migration_hash": "2023a0ae4a810629e061e85e7b1c84c5",
+ "modified": "2021-11-04 10:54:35.133451",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Device List",
