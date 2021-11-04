@@ -28,8 +28,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Network Name",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "wireless_ssid",
@@ -101,7 +100,7 @@
  ],
  "links": [],
  "migration_hash": "aa0a8cd3e45da1f053995a09432f2d9c",
- "modified": "2021-11-04 11:59:18.045532",
+ "modified": "2021-11-04 12:47:50.989670",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Network",

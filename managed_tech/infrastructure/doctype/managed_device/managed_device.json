@@ -148,8 +148,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Device Name",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "network_id",
@@ -173,7 +172,7 @@
  ],
  "links": [],
  "migration_hash": "5d6095871951e1322a7efe43b685fc79",
- "modified": "2021-11-04 11:59:42.240135",
+ "modified": "2021-11-04 12:47:06.116925",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Device",
