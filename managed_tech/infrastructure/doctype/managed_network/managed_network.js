@@ -16,14 +16,14 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 frappe.ui.form.on('Managed Network', 'setup', function(frm) {
-  cur_frm.set_query("device_name", "static_ip", function(doc, cdt, cdn) {
+  cur_frm.set_query("device_name", "static_ip", function() {
     return{
       filters: [
         ['parent', '=', frm.doc.company]
       ]
     }
   });
-  cur_frm.set_query("network_id", "devices", function(doc, cdt, cdn) {
+  cur_frm.set_query("network_id", "devices", function() {
     return{
       filters: [
         ['parent', '=', frm.doc.company]
