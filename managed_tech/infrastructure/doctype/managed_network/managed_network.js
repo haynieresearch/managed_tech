@@ -34,4 +34,13 @@ frappe.ui.form.on('Managed Network', 'onload', function(frm) {
       args: {'parent': doc.name}
     }
   });
+  cur_frm.set_query("network_id", "ip_segment", function(doc, cdt, cdn) {
+	  return {
+      query: "managed_tech.infrastructure.doctype.network.network.get_network_ids",
+        filters: {
+          "parent": doc.name
+        },
+      args: {'parent': doc.name}
+    }
+  });
 });

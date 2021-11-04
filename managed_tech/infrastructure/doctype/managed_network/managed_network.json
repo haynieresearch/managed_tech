@@ -9,6 +9,7 @@
  "field_order": [
   "company",
   "network",
+  "ip_segment",
   "devices",
   "static_ip"
  ],
@@ -40,6 +41,12 @@
    "options": "Customer",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "ip_segment",
+   "fieldtype": "Table",
+   "label": "IP Segments",
+   "options": "IP Segment"
   }
  ],
  "links": [
@@ -56,8 +63,8 @@
    "link_fieldname": "company"
   }
  ],
- "migration_hash": "8b084216b8d251e93fa263b3686c1825",
- "modified": "2021-11-04 10:56:59.485556",
+ "migration_hash": "a225657f6cc64159cd04a51fccd38570",
+ "modified": "2021-11-04 13:04:27.983968",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Network",

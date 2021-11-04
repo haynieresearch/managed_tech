@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2021-11-04 12:59:28.640498",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "network_id",
+  "network_name",
+  "purpose",
+  "ip_start",
+  "ip_end"
+ ],
+ "fields": [
+  {
+   "fieldname": "network_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Network ID",
+   "options": "Network",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "ip_start",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "IP Start"
+  },
+  {
+   "fieldname": "ip_end",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "IP End"
+  },
+  {
+   "fetch_from": "network_id.network_name",
+   "fieldname": "network_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Network Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-04 13:09:53.625498",
+ "modified_by": "Administrator",
+ "module": "Infrastructure",
+ "name": "IP Segment",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
