@@ -29,7 +29,8 @@ frappe.ui.form.on('Managed Network', 'setup', function(frm) {
       query: "managed_tech.infrastructure.doctype.network.network.get_network_ids",
         filters: {
           "company": doc.company
-        }
+        },
+      args: {'parent': 'Managed Network'}
     }
   });
 });

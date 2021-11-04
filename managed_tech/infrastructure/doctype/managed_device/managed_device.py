@@ -25,7 +25,7 @@ class ManagedDevice(Document):
 @frappe.validate_and_sanitize_search_inputs
 def get_devices(doctype, txt, searchfield, start, page_len, filters):
 	return frappe.db.sql("""select name, device_name
-		from `tabManaged Device List`
+		from `tabManaged Device`
 		where
 			parent = {company}"""
 		.format(company = frappe.db.escape(filters.get("company"))
