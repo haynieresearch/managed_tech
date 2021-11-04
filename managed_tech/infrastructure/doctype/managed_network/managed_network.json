@@ -16,18 +16,21 @@
   {
    "fieldname": "devices",
    "fieldtype": "Table",
+   "ignore_user_permissions": 1,
    "label": "Devices",
    "options": "Managed Device List"
   },
   {
    "fieldname": "network",
    "fieldtype": "Table",
+   "ignore_user_permissions": 1,
    "label": "Network",
    "options": "Network List"
   },
   {
    "fieldname": "static_ip",
    "fieldtype": "Table",
+   "ignore_user_permissions": 1,
    "label": "Static IPs",
    "options": "Static IP List"
   },
@@ -56,7 +59,7 @@
    "link_fieldname": "company"
   }
  ],
- "modified": "2021-11-03 21:24:47.326489",
+ "modified": "2021-11-03 21:27:46.510641",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Network",
@@ -72,7 +75,17 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
    "share": 1,
    "write": 1
   }
