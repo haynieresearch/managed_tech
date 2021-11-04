@@ -15,7 +15,7 @@
 //WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //See the License for the specific language governing permissions and
 //limitations under the License.
-frappe.ui.form.on('Managed Network', 'setup', function(frm) {
+frappe.ui.form.on('Managed Network', 'refresh', function(frm) {
   frm.fields_dict['static_ip'].grid.get_field('device_name').get_query = function(doc, cdt, cdn) {
       var child = locals[cdt][cdn];
       //console.log(child);
