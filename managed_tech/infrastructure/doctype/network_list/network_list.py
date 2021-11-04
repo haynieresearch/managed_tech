@@ -20,3 +20,13 @@ import frappe
 
 class NetworkList(Document):
 	pass
+
+@frappe.whitelist()
+@frappe.validate_and_sanitize_search_inputs
+def get_network_ids(doctype, txt, searchfield, start, page_len, filters):
+	return frappe.db.sql("""select name, network_name
+		from `tabNetwork List`
+		where
+			parent = {company}"""
+		.format(company = frappe.db.escape(filters.get("company"))
+		))

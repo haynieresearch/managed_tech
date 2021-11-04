@@ -4,6 +4,7 @@
  "autoname": "hash",
  "creation": "2021-11-03 16:30:15.560184",
  "doctype": "DocType",
+ "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -98,7 +99,6 @@
    "fieldtype": "Column Break"
   }
  ],
- "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
  "modified": "2021-11-03 21:42:43.646253",
