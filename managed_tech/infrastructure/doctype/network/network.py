@@ -18,7 +18,7 @@
 from frappe.model.document import Document
 import frappe
 
-class NetworkList(Document):
+class Network(Document):
 	pass
 
 @frappe.whitelist()

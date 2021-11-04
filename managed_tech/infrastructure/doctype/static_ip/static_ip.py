@@ -16,17 +16,6 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 from frappe.model.document import Document
-import frappe
 
-class ManagedDeviceList(Document):
+class StaticIP(Document):
 	pass
-
-@frappe.whitelist()
-@frappe.validate_and_sanitize_search_inputs
-def get_devices(doctype, txt, searchfield, start, page_len, filters):
-	return frappe.db.sql("""select name, device_name
-		from `tabManaged Device List`
-		where
-			parent = {company}"""
-		.format(company = frappe.db.escape(filters.get("company"))
-		))

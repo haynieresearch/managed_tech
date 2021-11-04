@@ -17,19 +17,19 @@
    "fieldname": "devices",
    "fieldtype": "Table",
    "label": "Devices",
-   "options": "Managed Device List"
+   "options": "Managed Device"
   },
   {
    "fieldname": "network",
    "fieldtype": "Table",
    "label": "Network",
-   "options": "Network List"
+   "options": "Network"
   },
   {
    "fieldname": "static_ip",
    "fieldtype": "Table",
    "label": "Static IPs",
-   "options": "Static IP List"
+   "options": "Static IP"
   },
   {
    "fieldname": "company",
@@ -57,7 +57,7 @@
   }
  ],
  "migration_hash": "8b084216b8d251e93fa263b3686c1825",
- "modified": "2021-11-04 10:53:53.827407",
+ "modified": "2021-11-04 10:56:59.485556",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Network",

@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestNetworkList(unittest.TestCase):
+class TestNetwork(unittest.TestCase):
 	pass

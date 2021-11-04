@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestManagedDeviceList(unittest.TestCase):
+class TestStaticIP(unittest.TestCase):
 	pass
