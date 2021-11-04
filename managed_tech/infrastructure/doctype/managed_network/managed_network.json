@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2021-11-03 15:26:32.717609",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "network",
+  "devices",
+  "static_ip"
+ ],
+ "fields": [
+  {
+   "fieldname": "devices",
+   "fieldtype": "Table",
+   "label": "Devices",
+   "options": "Managed Device List"
+  },
+  {
+   "fieldname": "network",
+   "fieldtype": "Table",
+   "label": "Network",
+   "options": "Network List"
+  },
+  {
+   "fieldname": "static_ip",
+   "fieldtype": "Table",
+   "label": "Static IPs",
+   "options": "Static IP List"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "links": [
+  {
+   "link_doctype": "Quotation",
+   "link_fieldname": "company"
+  },
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "company"
+  },
+  {
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "company"
+  }
+ ],
+ "modified": "2021-11-03 16:52:05.084311",
+ "modified_by": "Administrator",
+ "module": "Infrastructure",
+ "name": "Managed Network",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "company",
+ "track_changes": 1
+}
