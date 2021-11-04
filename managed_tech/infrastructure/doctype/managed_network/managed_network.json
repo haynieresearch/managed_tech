@@ -56,7 +56,7 @@
    "link_fieldname": "company"
   }
  ],
- "modified": "2021-11-03 16:52:05.084311",
+ "modified": "2021-11-03 21:24:47.326489",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Network",
@@ -72,6 +72,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
