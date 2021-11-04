@@ -15,8 +15,6 @@
 //WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //See the License for the specific language governing permissions and
 //limitations under the License.
-frappe.ui.form.on('IP Segment', {
-	// refresh: function(frm) {
-
-	// }
+frappe.ui.form.on('IP Segment', 'onload', function(frm) {
+  cur_frm.add_fetch('network_id', 'network_name', 'network_name')
 });

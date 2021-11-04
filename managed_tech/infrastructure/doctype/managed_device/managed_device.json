@@ -21,16 +21,19 @@
   "local_ip",
   "remote_port",
   "user_id",
+  "password",
   "column_break_8",
   "network_name",
   "remote_ip",
   "mac_address",
-  "password",
+  "fqdn",
   "section_break_16",
   "in_service",
   "eol_date",
   "column_break_18",
-  "eol_rate"
+  "eol_rate",
+  "notes_section",
+  "notes"
  ],
  "fields": [
   {
@@ -168,11 +171,25 @@
    "in_standard_filter": 1,
    "label": "Network Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "fqdn",
+   "fieldtype": "Data",
+   "label": "FQDN"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor"
   }
  ],
  "links": [],
  "migration_hash": "d786a6cd8c5451b01c6b7c13e5d2d39d",
- "modified": "2021-11-04 13:15:22.953149",
+ "modified": "2021-11-04 14:07:48.203123",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Managed Device",
