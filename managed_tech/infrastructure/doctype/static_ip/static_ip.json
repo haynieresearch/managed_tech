@@ -66,15 +66,28 @@
   }
  ],
  "links": [],
- "migration_hash": "5cb079c899dd09388760424c1f163319",
- "modified": "2021-11-04 13:04:34.025048",
+ "migration_hash": "2afa29c6a722b4a3b9ce651714cc8337",
+ "modified": "2021-11-04 13:15:08.588542",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Static IP",
  "name_case": "UPPER CASE",
  "naming_rule": "Random",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "device_name",
