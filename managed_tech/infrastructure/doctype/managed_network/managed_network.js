@@ -20,17 +20,18 @@ frappe.ui.form.on('Managed Network', 'setup', function(frm) {
     return {
       query: "managed_tech.infrastructure.doctype.managed_device.managed_device.get_devices",
         filters: {
-          "company": doc.company
-  			}
+          "parent": doc.name
+  			},
+      args: {'parent': doc.name}
 		}
   });
   cur_frm.set_query("network_id", "devices", function(doc, cdt, cdn) {
 	  return {
       query: "managed_tech.infrastructure.doctype.network.network.get_network_ids",
         filters: {
-          "company": doc.company
+          "parent": doc.name
         },
-      args: {'parent': 'Managed Network'}
+      args: {'parent': doc.name}
     }
   });
 });

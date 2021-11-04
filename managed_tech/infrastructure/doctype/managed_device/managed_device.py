@@ -27,6 +27,6 @@ def get_devices(doctype, txt, searchfield, start, page_len, filters):
 	return frappe.db.sql("""select name, device_name
 		from `tabManaged Device`
 		where
-			parent = {company}"""
-		.format(company = frappe.db.escape(filters.get("company"))
+			parent = {parent}"""
+		.format(parent = frappe.db.escape(filters.get("parent"))
 		))
