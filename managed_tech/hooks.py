@@ -24,7 +24,28 @@ app_description = "Managed Technology System"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "info@haynieresearch.us"
-app_license = "Apache License, Version 2.0"
+app_license = "Apache 2.0"
+
+fixtures = [
+    {"doctype":"Custom Field", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Property Setter", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Opportunity", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Customer", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Expense Claim", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Purchase Order", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Purchase Receipt", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Purchase Invoice", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Sales Order", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Sales Invoice", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Delivery Note", "filters": [["_user_tags", "like", ("%managed_tech%")]]},
+    {"doctype":"Role", "filters": [["_user_tags", "like", ("%managed_tech%")]]}
+]
+
+calendars = ["Production", "Production Music Project"]
+
+domains = {
+	'Managed Technology': 'managed_tech.domains.managed_tech'
+}
 
 # Includes in <head>
 # ------------------

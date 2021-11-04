@@ -18,3 +18,7 @@
 frappe.ui.form.on('IP Segment', 'onload', function(frm) {
   cur_frm.add_fetch('network_id', 'network_name', 'network_name')
 });
+
+frappe.ui.form.on('IP Segment', 'refresh', function(frm) {
+  cur_frm.add_fetch('network_id', 'network_name', 'network_name')
+});

@@ -21,3 +21,10 @@ frappe.ui.form.on('Static IP', 'onload', function(frm) {
   cur_frm.add_fetch('device_id', 'mac_address', 'mac_address')
   cur_frm.add_fetch('device_id', 'ip_address', 'ip_address')
 });
+
+frappe.ui.form.on('Static IP', 'refresh', function(frm) {
+  cur_frm.add_fetch('device_id', 'device_name', 'device_name')
+  cur_frm.add_fetch('device_id', 'device_type', 'device_type')
+  cur_frm.add_fetch('device_id', 'mac_address', 'mac_address')
+  cur_frm.add_fetch('device_id', 'ip_address', 'ip_address')
+});

@@ -28,8 +28,7 @@
    "fetch_from": "device_id.mac_address",
    "fieldname": "mac_address",
    "fieldtype": "Data",
-   "label": "MAC Address",
-   "read_only": 1
+   "label": "MAC Address"
   },
   {
    "fetch_from": "device_id.local_ip",
@@ -37,8 +36,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "IP Address",
-   "read_only": 1
+   "label": "IP Address"
   },
   {
    "fetch_from": "device_id.device_name",
@@ -70,8 +68,8 @@
   }
  ],
  "links": [],
- "migration_hash": "2afa29c6a722b4a3b9ce651714cc8337",
- "modified": "2021-11-04 14:19:46.647964",
+ "migration_hash": "dbd139745378966f713cd3e239ca4d83",
+ "modified": "2021-11-04 17:40:30.770542",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Static IP",
@@ -88,6 +86,29 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Managed Technology Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Managed Technology User",
    "share": 1,
    "write": 1
   }

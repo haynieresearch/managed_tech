@@ -44,3 +44,18 @@ frappe.ui.form.on('Managed Network', 'onload', function(frm) {
     }
   });
 });
+
+frappe.ui.form.on('Static IP', 'refresh', function(frm) {
+  cur_frm.add_fetch('device_id', 'device_name', 'device_name')
+  cur_frm.add_fetch('device_id', 'device_type', 'device_type')
+  cur_frm.add_fetch('device_id', 'mac_address', 'mac_address')
+  cur_frm.add_fetch('device_id', 'ip_address', 'ip_address')
+});
+
+frappe.ui.form.on('IP Segment', 'refresh', function(frm) {
+  cur_frm.add_fetch('network_id', 'network_name', 'network_name')
+});
+
+frappe.ui.form.on('Managed Device', 'refresh', function(frm) {
+  cur_frm.add_fetch('network_id', 'network_name', 'network_name')
+});
