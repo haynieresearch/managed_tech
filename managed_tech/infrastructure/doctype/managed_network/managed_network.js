@@ -15,7 +15,7 @@
 //WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //See the License for the specific language governing permissions and
 //limitations under the License.
-frappe.ui.form.on('Managed Network', 'setup', function(frm) {
+frappe.ui.form.on('Managed Network', 'onload', function(frm) {
   cur_frm.set_query("device_name", "static_ip", function(doc, cdt, cdn) {
     return {
       query: "managed_tech.infrastructure.doctype.managed_device.managed_device.get_devices",

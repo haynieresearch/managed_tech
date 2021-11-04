@@ -65,10 +65,9 @@
    "unique": 1
   }
  ],
- "istable": 1,
  "links": [],
- "migration_hash": "ee49d7531ed6eed7a62507f3f86b0c06",
- "modified": "2021-11-04 10:56:22.536682",
+ "migration_hash": "5cb079c899dd09388760424c1f163319",
+ "modified": "2021-11-04 11:57:12.372050",
  "modified_by": "Administrator",
  "module": "Infrastructure",
  "name": "Static IP",
